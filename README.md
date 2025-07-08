@@ -46,6 +46,7 @@ GROUP BY YEAR(order_date), MONTH(order_date)
 ORDER BY YEAR(order_date), MONTH(order_date);
 
 ### 🧍‍♂️ New Customers Each Year
+```sql
 SELECT 
   YEAR(order_date) AS year,
   COUNT(DISTINCT customer_key) AS customers
